@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.maxwidth {
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo p {
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-family: 'Kanit';
+}
+
+.logo span {
+    color: crimson;
+}
+
+.menuItem ul {
+    display: flex;
+    margin-right: -30px;
+}
+
+.menuItem li a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menuItem li a:hover {
+    color: crimson;
+    transition: color 0.4s ease-in-out;
+}
+
+/* ********Hamburger Section*********** */
+.hamBurger {
+    width: 50px;
+    font-size: 30px;
+    display: none;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+/* ***********Home section************ */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 0 100px;
+    padding-top: 100px;
+    background: url(/img/bgpython.jpg) no-repeat top center/cover;
+}
+
+.para {
+    color: white;
+    font-size: 45px;
+    font-family: "Roboto";
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.para span {
+    color: crimson;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 25px;
+    background-color: black;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    cursor: pointer;
+    color: crimson;
+}
+
+.btn:hover {
+    color: white;
+    background-color: crimson;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* ******Scroll bottton*********** */
+.scroll {
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 0 5px;
+    height: 45px;
+    width: 42px;
+    line-height: 45px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.scroll i {
+    color: white;
+}
+
+/* ****************Service Section***************** */
+.container {
+    background-color: black;
+    color: white;
+    padding: 20px 80px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.containerBox {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: rgb(17, 15, 15);
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    box-shadow: 2px 3px 8px crimson;
+}
+
+.icon {
+    font-size: 30px;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box p {
+    color: rgb(189, 184, 184);
+    text-align: center;
+}
+
+.box:hover .icon {
+    color: white;
+}
+
+.sbox:hover {
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* *************Course Section**************** */
+.img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#charge {
+    color: gold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.box button {
+    font-size: 20px;
+    padding: 15px;
+    background-color: crimson;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: black;
+    border: 2px solid crimson;
+}
+
+/* ****************FAQ section**************** */
+.faq {
+    background-color: black;
+    padding: 40px 100px;
+    color: white;
+}
+
+.faq h1 {
+    margin-bottom: 40px;
+}
+
+.pg {
+    margin-bottom: 20px;
+}
+
+#qs {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#qs:hover {
+    color: crimson;
+}
+
+#ans {
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px grey;
+    width: 60%;
+}
+
+.ans {
+    display: none;
+
+}
+
+#up {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* **************Contact Section******************* */
+.contactSection {
+    background-color: black;
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conBox {
+    width: 40%;
+    padding: 20px;
+    color: white;
+}
+
+.conBox h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.leftBox i {
+    color: crimson;
+    font-size: 30px;
+}
+
+.leftBox p {
+    font-size: 20px;
+    color: grey;
+}
+
+.aboutPara {
+    margin-bottom: 20px;
+}
+
+.adress {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.item1 {
+    margin-bottom: 20px;
+}
+
+.item2 p {
+    margin-right: 120px;
+}
+
+.adress i {
+    margin-right: 40px;
+}
+
+.socialBox i {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+.rightBox h2 {
+    margin-bottom: 30px;
+}
+
+.rightBox {
+    width: 50%;
+}
+
+.rightBox form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    outline: none;
+}
+
+.rightBox textarea {
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.halfFile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.halfFile input {
+    width: 90%;
+}
+
+.name,
+.email {
+    width: 50%;
+}
+
+.subBtn {
+    width: 40%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    border: 2px solid crimson;
+    background-color: black;
+}
+
+.subBtn:hover {
+    background-color: crimson;
+}
+
+/* *********Footer section*********** */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+/* ************Responsive Design********************* */
+@media only screen and (max-width: 1200px) {
+    #courseBox {
+        width: 45%;
+    }
+
+    .home {
+        height: 100vh;
+    }
+
+    .para {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .home {
+        height: 100vh;
+    }
+
+    .para {
+        width: 100%;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .maxwidth {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .contactSection {
+        flex-direction: column;
+    }
+
+    .conBox {
+        width: 100%;
+    }
+
+    .img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .home {
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .box h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .home {
+        height: 100vh;
+    }
+
+    .hamBurger {
+        display: block;
+    }
+
+    #menuBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        width: 70%;
+        height: 60vh;
+        padding: 20px;
+        position: fixed;
+        top: 20px;
+        right: -600px;
+        background-color: rgb(24, 23, 23);
+        box-shadow: 2px 3px 8px grey;
+        border-radius: 20px;
+    }
+
+    .menuItem ul li {
+        margin-bottom: 10px;
+    }
+
+    .para {
+        width: 100%;
+        padding: 0 ;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    .btn{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .serviceContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    #courseBox {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img {
+        width: 250px;
+        height: 100px;
+        margin-bottom: 5px;
+    }
+
+    #courseBox p {
+        font-size: 15px;
+    }
+
+    #courseBox h2 {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    #courseBox button {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    #charge {
+        font-size: 15px;
+    }
+
+    .faq {
+        padding: 20px;
+    }
+
+    .faq h1 {
+        font-size: 30px;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    #ans {
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 3px 8px grey;
+        width: 100%;
+    }
+
+    .contactSection {
+        padding: 20px;
+    }
+
+    .conBox {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .conBox h2 {
+        margin-bottom: 10px;
+    }
+
+    .leftBox i {
+        font-size: 20px;
+    }
+
+    .leftBox p {
+        font-size: 15px;
+    }
+
+    .rightBox h2 {
+        margin-bottom: 10px;
+    }
+
+    .rightBox form input {
+        font-size: 15px;
+    }
+
+    .rightBox textarea {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .subBtn {
+        /* width: 40%; */
+        background-color: crimson;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
+
+    .box h2 {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .logo p {
+        font-size: 30px;
+    }
+
+    #bar {
+        top: 20px;
+        right: 10px;
+    }
+
+    .maxwidth {
+        padding: 10px;
+    }
+
+    .home {
+        height: 60vh;
+        padding: 10px;
+    }
+
+    .para p {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .img {
+        width: 200px;
+    }
+
+    #qs {
+        font-size: 15px;
+    }
+
+    .halfFile {
+        flex-direction: column;
+    }
+
+    .name,
+    .email {
+        width: 100%;
+    }
+}
